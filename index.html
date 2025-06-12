@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yashvardhan Yadav</title>
+  <meta name="description" content="Portfolio of Yashvardhan Yadav — B.Tech CSE at VIT Bhopal. Full-Stack Developer with Java, Spring Boot, React, and AI/ML projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════
+     SIDEBAR
+═══════════════════════════════════ -->
+<aside class="sidebar">
+
+  <div class="avatar-wrap" id="avatarWrap" title="Click to upload photo">
+    <input type="file" id="avatarInput" accept="image/*" />
+    <img id="avatarImg" class="avatar-circle" src="" alt="Yashvardhan Yadav" />
+    <span class="avatar-hint">upload photo</span>
+  </div>
+
+  <div class="sidebar-name">Yashvardhan<br>Yadav</div>
+  <div class="sidebar-role">CS Engineer · Full-Stack</div>
+
+  <ul class="sidebar-nav">
+    <li><a href="#education"       data-n="01">Education</a></li>
+    <li><a href="#projects"        data-n="02">Projects</a></li>
+    <li><a href="#skills"          data-n="03">Skills</a></li>
+    <li><a href="#certifications"  data-n="04">Certifications</a></li>
+    <li><a href="#achievements"    data-n="05">Achievements</a></li>
+    <li><a href="#contact"         data-n="06">Contact</a></li>
+  </ul>
+
+  <div class="sidebar-contacts">
+    <a href="tel:+919391067738" class="s-contact">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.55a16 16 0 0 0 6.06 6.06l.92-.92a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      +91 93910 67738
+    </a>
+    <a href="mailto:yashvardhan4597@gmail.com" class="s-contact">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      yashvardhan4597@gmail.com
+    </a>
+    <a href="https://github.com/Yash-2306" target="_blank" rel="noopener" class="s-contact">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      Yash-2306
+    </a>
+    <a href="https://linkedin.com/in/yash-vardhan-4a534732b" target="_blank" rel="noopener" class="s-contact">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      LinkedIn
+    </a>
+  </div>
+
+</aside>
+
+<!-- ═══════════════════════════════════
+     MAIN
+═══════════════════════════════════ -->
+<div class="content-wrap" style="flex:1; display:flex; flex-direction:column; min-width:0;">
+<main class="main">
+
+  <!-- HERO -->
+  <div id="hero" class="section fade">
+    <h1 class="hero-big-name">Yashvardhan<br>Yadav</h1>
+    <p class="hero-sub">
+      B.Tech Computer Science Engineering student at VIT Bhopal — building production-grade systems in Java, Spring Boot, and React. Interested in backend engineering, AI integration, and developer tooling.
+    </p>
+  </div>
+
+  <!-- EDUCATION -->
+  <div id="education" class="section fade">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title">Education</h2>
+    </div>
+
+    <div class="edu-row">
+      <div>
+        <div class="edu-inst">Vellore Institute of Technology, Bhopal</div>
+        <div class="edu-deg">B.Tech — Computer Science Engineering</div>
+      </div>
+      <div class="edu-right">
+        <div class="edu-score">8.79 CGPA</div>
+        <div class="edu-date">Sep 2023 – May 2027</div>
+      </div>
+    </div>
+
+    <div class="edu-row">
+      <div>
+        <div class="edu-inst">Sri Chaitanya Junior College, Hyderabad</div>
+        <div class="edu-deg">Class XII — Telangana State Board</div>
+      </div>
+      <div class="edu-right">
+        <div class="edu-score">92.9%</div>
+        <div class="edu-date">Apr 2021 – Mar 2023</div>
+      </div>
+    </div>
+
+    <div class="edu-row">
+      <div>
+        <div class="edu-inst">The Hyderabad Public School, Begumpet</div>
+        <div class="edu-deg">Class X — ICSE Board</div>
+      </div>
+      <div class="edu-right">
+        <div class="edu-score">97.0%</div>
+        <div class="edu-date">Apr 2018 – Mar 2021</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div id="projects" class="section fade">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">Projects</h2>
+    </div>
+
+    <!-- KTCS -->
+    <div class="project">
+      <div class="proj-header">
+        <div class="proj-name">Campus Core ERP System (KTCS)</div>
+        <a href="https://ktcsschool.netlify.app" target="_blank" rel="noopener" class="proj-live">ktcsschool.netlify.app</a>
+      </div>
+      <ul class="proj-bullets">
+        <li>Production school management system actively used by 250+ students and 10+ teachers — replaced a fully manual register-based process.</li>
+        <li>Cut report-card prep time from 15–20 min to under 10 seconds via in-memory PDF generation streamed directly to the client.</li>
+        <li>Role-based dashboards (Admin, Teacher, Student) with bulk CSV import and a lead pipeline with WhatsApp Click-to-Chat outreach.</li>
+        <li>Stateless Spring Boot REST API — JWT auth, BCrypt hashing, 5-attempt lockout, filter-level RBAC, HikariCP, audit log.</li>
+        <li>Backend on Railway (MySQL) · Frontend on Netlify, migrating to Vercel.</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">Tailwind</span>
+        <span class="tag">Spring Boot</span><span class="tag">MySQL</span><span class="tag">JWT</span><span class="tag">REST API</span>
+      </div>
+    </div>
+
+    <!-- DocGen -->
+    <div class="project">
+      <div class="proj-header">
+        <div class="proj-name">DocGen — AI API Documentation Generator</div>
+        <a href="https://docgen-tat1.onrender.com" target="_blank" rel="noopener" class="proj-live">docgen-tat1.onrender.com</a>
+      </div>
+      <ul class="proj-bullets">
+        <li>Parses Spring Boot REST controllers and auto-generates structured API documentation via Google's Gemini API.</li>
+        <li>Full RAG pipeline: method-level chunking → Gemini text-embedding-004 → cosine similarity retrieval of top-3 chunks for natural-language Q&amp;A.</li>
+        <li>Cut documentation time from 20–30 min per controller to under 5 seconds.</li>
+        <li>PDF export via OpenPDF and standalone HTML export; deployed on Railway.</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Gemini API</span>
+        <span class="tag">RAG</span><span class="tag">OpenPDF</span><span class="tag">Railway</span>
+      </div>
+    </div>
+
+    <!-- Malware -->
+    <div class="project">
+      <div class="proj-header">
+        <div class="proj-name">Network Traffic Malware / Botnet Detection</div>
+        <a href="https://malware-botnet-detection.vercel.app" target="_blank" rel="noopener" class="proj-live">malware-botnet-detection.vercel.app</a>
+      </div>
+      <ul class="proj-bullets">
+        <li>End-to-end ML pipeline classifying 22,544 network connections using 41 flow features from the NSL-KDD dataset.</li>
+        <li>Random Forest (100 estimators): 77.1% accuracy, 96.6% precision, 96.2% ROC-AUC on the official held-out test set.</li>
+        <li>Top features by importance: src_bytes, dst_bytes, same_srv_rate.</li>
+        <li>Static dashboard rendering confusion matrix, ROC curve, and feature importance charts from pipeline output.</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Pandas</span>
+        <span class="tag">Random Forest</span><span class="tag">Jupyter</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SKILLS -->
+  <div id="skills" class="section fade">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Technical Skills</h2>
+    </div>
+
+    <div class="skills-table">
+      <div class="skill-row">
+        <span class="skill-cat">Languages</span>
+        <div class="skill-tags">
+          <span class="tag">Java</span><span class="tag">Python</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-row">
+        <span class="skill-cat">Frontend</span>
+        <div class="skill-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">React</span>
+          <span class="tag">Next.js</span><span class="tag">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="skill-row">
+        <span class="skill-cat">Backend</span>
+        <div class="skill-tags">
+          <span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">RESTful APIs</span>
+          <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">MySQL</span>
+        </div>
+      </div>
+      <div class="skill-row">
+        <span class="skill-cat">Cloud</span>
+        <div class="skill-tags">
+          <span class="tag">AWS EC2</span><span class="tag">AWS S3</span><span class="tag">AWS RDS</span>
+          <span class="tag">AWS IAM</span><span class="tag">Git</span>
+        </div>
+      </div>
+      <div class="skill-row">
+        <span class="skill-cat">AI / ML</span>
+        <div class="skill-tags">
+          <span class="tag">Gemini API</span><span class="tag">LLM Integration</span>
+          <span class="tag">Prompt Engineering</span><span class="tag">scikit-learn</span>
+        </div>
+      </div>
+      <div class="skill-row">
+        <span class="skill-cat">Core CS</span>
+        <div class="skill-tags">
+          <span class="tag">DSA</span><span class="tag">OOP</span><span class="tag">DBMS</span>
+          <span class="tag">OS</span><span class="tag">Software Engineering</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div id="certifications" class="section fade">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">Certifications</h2>
+    </div>
+
+    <div>
+
+      <div class="cert-row">
+        <div class="cert-info">
+          <div class="cert-name">Spring Boot 4, Spring 6 &amp; Hibernate</div>
+          <div class="cert-issuer">Udemy — Chad Darby</div>
+        </div>
+        <div class="cert-upload">
+          <input type="file" id="cert0" accept="image/*,.pdf" />
+          <label for="cert0" class="up-btn">Upload Proof</label>
+          <div class="cert-preview" id="prev0">
+            <img class="cert-preview-img" id="pimg0" src="" alt="" />
+            <span class="cert-badge" id="pbadge0"></span>
+            <button class="cert-remove" data-id="0">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-row">
+        <div class="cert-info">
+          <div class="cert-name">The Bits and Bytes of Computer Networking</div>
+          <div class="cert-issuer">Coursera — Google</div>
+        </div>
+        <div class="cert-upload">
+          <input type="file" id="cert1" accept="image/*,.pdf" />
+          <label for="cert1" class="up-btn">Upload Proof</label>
+          <div class="cert-preview" id="prev1">
+            <img class="cert-preview-img" id="pimg1" src="" alt="" />
+            <span class="cert-badge" id="pbadge1"></span>
+            <button class="cert-remove" data-id="1">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-row">
+        <div class="cert-info">
+          <div class="cert-name">Python Essentials</div>
+          <div class="cert-issuer">Vityarthi</div>
+        </div>
+        <div class="cert-upload">
+          <input type="file" id="cert2" accept="image/*,.pdf" />
+          <label for="cert2" class="up-btn">Upload Proof</label>
+          <div class="cert-preview" id="prev2">
+            <img class="cert-preview-img" id="pimg2" src="" alt="" />
+            <span class="cert-badge" id="pbadge2"></span>
+            <button class="cert-remove" data-id="2">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-row">
+        <div class="cert-info">
+          <div class="cert-name">Programming in Java</div>
+          <div class="cert-issuer">Vityarthi</div>
+        </div>
+        <div class="cert-upload">
+          <input type="file" id="cert3" accept="image/*,.pdf" />
+          <label for="cert3" class="up-btn">Upload Proof</label>
+          <div class="cert-preview" id="prev3">
+            <img class="cert-preview-img" id="pimg3" src="" alt="" />
+            <span class="cert-badge" id="pbadge3"></span>
+            <button class="cert-remove" data-id="3">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-row">
+        <div class="cert-info">
+          <div class="cert-name">Introduction to Machine Learning</div>
+          <div class="cert-issuer">NPTEL</div>
+        </div>
+        <div class="cert-upload">
+          <input type="file" id="cert4" accept="image/*,.pdf" />
+          <label for="cert4" class="up-btn">Upload Proof</label>
+          <div class="cert-preview" id="prev4">
+            <img class="cert-preview-img" id="pimg4" src="" alt="" />
+            <span class="cert-badge" id="pbadge4"></span>
+            <button class="cert-remove" data-id="4">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-row">
+        <div class="cert-info">
+          <div class="cert-name">Marketing Analytics</div>
+          <div class="cert-issuer">NPTEL</div>
+        </div>
+        <div class="cert-upload">
+          <input type="file" id="cert5" accept="image/*,.pdf" />
+          <label for="cert5" class="up-btn">Upload Proof</label>
+          <div class="cert-preview" id="prev5">
+            <img class="cert-preview-img" id="pimg5" src="" alt="" />
+            <span class="cert-badge" id="pbadge5"></span>
+            <button class="cert-remove" data-id="5">Remove</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ACHIEVEMENTS -->
+  <div id="achievements" class="section fade">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">Leadership &amp; Achievements</h2>
+    </div>
+    <div class="ach-list">
+      <div class="ach-item">Solved 200+ problems on LeetCode across data structures and algorithms.</div>
+      <div class="ach-item">Won 3rd position (honorary mention) at Model United Nations.</div>
+      <div class="ach-item">Won multiple inter-school debate and quiz competitions.</div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact" class="section fade">
+    <div class="sec-head">
+      <span class="sec-num">06</span>
+      <h2 class="sec-title">Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <a href="tel:+919391067738" class="c-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.55a16 16 0 0 0 6.06 6.06l.92-.92a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +91 93910 67738
+      </a>
+      <a href="mailto:yashvardhan4597@gmail.com" class="c-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        yashvardhan4597@gmail.com
+      </a>
+      <a href="https://github.com/Yash-2306" target="_blank" rel="noopener" class="c-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        github.com/Yash-2306
+      </a>
+      <a href="https://linkedin.com/in/yash-vardhan-4a534732b" target="_blank" rel="noopener" class="c-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Yashvardhan Yadav &nbsp;·&nbsp; 2025
+</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
