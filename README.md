@@ -1,6 +1,6 @@
 # Yashvardhan Yadav — Portfolio
 
-Personal portfolio website. Static frontend — no build step.
+Personal portfolio website. 
 
 ## Hosting on GitHub Pages
 
